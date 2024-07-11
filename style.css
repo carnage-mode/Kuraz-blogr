@@ -1,0 +1,165 @@
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.primary {
+  color: #ff4457;
+}
+
+.secondary {
+  color: #1e3a50;
+}
+
+.white {
+  color: white;
+}
+
+button {
+  border-radius: 10vh;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+button.primary {
+  background: white;
+  color: #ff4457;
+}
+
+button.secondary {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section .title {
+  font-size: 40px;
+}
+
+.section.center {
+  align-items: center;
+}
+
+.section.spread {
+  justify-content: space-between;
+}
+
+.gap {
+  gap: 20px;
+}
+
+.header {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 140, 113, 0.9),
+      rgb(255, 68, 87, 0.9)
+    ),
+    url("./images/bg-pattern-intro-desktop.svg");
+  padding: 40px;
+  background-position:
+    left,
+    150% 70%;
+  background-size: 100%, 200vh;
+  background-repeat: no-repeat, no-repeat;
+  border-radius: 0 0 0 100px;
+}
+
+.header {
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.navigation .left,
+.navigation .right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+a.logo {
+  padding: 20px;
+}
+
+a.nav {
+  text-decoration: none;
+}
+
+.header .one {
+  padding: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content * {
+  padding: 8px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content .two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content .three {
+  background: rgb(57, 58, 88);
+}
+
+img.medium {
+  width: 600px;
+  height: auto;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #bfbfc7;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background: #24242c;
+  color: white;
+  padding: 40px;
+  display: flex;
+  gap: 8px;
+  justify-content: space-around;
+}
